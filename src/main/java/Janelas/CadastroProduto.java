@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package Janelas;
-
+import BD.conexao;
 /**
  *
  * @author lucas.gmpedro
@@ -15,6 +15,8 @@ public class CadastroProduto extends javax.swing.JFrame {
      */
     public CadastroProduto() {
         initComponents();
+        
+        
     }
 
     /**
