@@ -9,12 +9,14 @@ import BD.conexao;
  * @author lucas.gmpedro
  */
 public class CadastroProduto extends javax.swing.JFrame {
+    ProdutotableModel  model = new ProdutotableModel();
 
     /**
      * Creates new form NewJFrame
      */
-    public CadastroProduto() {
+    public CadastroProduto() {        
         initComponents();
+        jTProdutos.setModel(Model);
         
         
     }
@@ -40,7 +42,7 @@ public class CadastroProduto extends javax.swing.JFrame {
         jBalterar = new javax.swing.JButton();
         jBexcluir = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTtabela = new javax.swing.JTable();
+        jTProdutos = new javax.swing.JTable();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -117,7 +119,7 @@ public class CadastroProduto extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        jTtabela.setModel(new javax.swing.table.DefaultTableModel(
+        jTProdutos.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
                 {null, null, null, null},
@@ -128,7 +130,7 @@ public class CadastroProduto extends javax.swing.JFrame {
                 "Title 1", "Title 2", "Title 3", "Title 4"
             }
         ));
-        jScrollPane1.setViewportView(jTtabela);
+        jScrollPane1.setViewportView(jTProdutos);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -205,9 +207,9 @@ public class CadastroProduto extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTable jTProdutos;
     private javax.swing.JTextField jTdescricao;
     private javax.swing.JTextField jTquantidade;
-    private javax.swing.JTable jTtabela;
     private javax.swing.JTextField jTvalor;
     // End of variables declaration//GEN-END:variables
 }
